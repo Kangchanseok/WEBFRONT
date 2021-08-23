@@ -36,7 +36,21 @@
         /* beverage 클래스의 후손 p태그 선택 */
         .beverage p{
             font-weight: bold;
-            
+        }
+
+        /* 구조 선택자 */
+        .menu > li:first-child{
+            /* .menu 클래스의 자식 li중에서 첫 번째 자식 */
+            background-color: rgba(0,255,0,0.5);
+        }
+        .menu > li:nth-child(2){
+            background-color: rgba(0,0,255,0.5);
+        }
+        .menu > li:nth-child(3){
+            background-color: rgba(128,0,128,0.5);
+        }
+        .menu > li:last-child{
+            background-color: rgba(255,0,0,0.5);
         }
         
     </style>
