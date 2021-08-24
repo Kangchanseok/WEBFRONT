@@ -4,6 +4,11 @@
 
 h1 {
     color: red;
+    /* 폰트 설정 
+        :후보 글꼴을 ,로 나열
+        :폰트가 없을 경우 대비, 가장 마지막에 일반 글꼴을 명시
+        */
+    font-family: 궁서체, 신명조, serif;
     background-color: greenyellow;
 }
 a:link{
@@ -26,4 +31,10 @@ a:visited{
    /* 이미 방문한 링크의 상태 */
     color: blue;
 
+}
+.feature{
+    /* class = feature
+    text-decoration 속성: 줄로 꾸미기 */
+    text-decoration: underline;
+    
 }

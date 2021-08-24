@@ -41,7 +41,16 @@
         */
         /* beverage 클래스의 후손 p태그 선택 */
         .beverage p{
-            font-weight: bold;
+            font-weight: lighter; 
+            /* font-size 속성: 글꼴의 크기
+            기본사이즈는 16px
+            절대 크기: px
+            상대 크기: em(배율), %(퍼센트) */
+            font-size: 1.1em;
+        }
+        .beverage h2{
+            font-size: 1.5em;
+            /* 1.5em = 150% = 24px */
         }
 
         /* 구조 선택자 */
@@ -76,7 +85,7 @@
     <div class="seller" >
         <h2>Green Tea Cooler</h2>
         <img src="images/green.jpg" alt="green tea cooler">
-        <p>Chock full of vitamins and minerals, this elixir combines
+        <p>Chock full of <span class="feature">vitamins and minerals</span>, this elixir combines
              the healthful benefits of green tea with 
              a twist of chamomile blossoms and ginger root.</p>
     </div>
