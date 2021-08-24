@@ -38,3 +38,15 @@ a:visited{
     text-decoration: underline;
     
 }
+/* .menu img {
+    /* 공간 점유 방식을 변경
+    none: 공간 점유 x 
+    block: 공간 점유방식을 블락으로
+    inline: 공간 점유방식을 인라인으로
+     */
+     /* visibility 속성:
+        visible: 표시
+        hidden: 표시하지 않음(공간은 점유) */
+        /* visibility: hidden;
+} */
+
