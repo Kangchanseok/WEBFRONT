@@ -4,6 +4,11 @@
 <meta charset="utf-8">
 <title>리스트를 이용한 메뉴 만들기</title>
 <style type="text/css">
+*{
+    margin:0;
+    padding:0;
+
+}
 body{
     font-family: "맑은 고딕","돋움", serif;
     font-size: 12px;
@@ -15,33 +20,38 @@ body{
     margin-right: auto;
     width: 550px;
 }
-ul{
+.tab-box ul{
     list-style-type: none;
     height: 27px;
 }
-li{
+.tab-box li{
     float:right;
     width:100px; height:22px;
     border:1px solid #999;
     background-color: #ccc;
     text-align: center;
     padding-top: 3px;
+    margin-right: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
 }
 .tabview{
-    margin-top: 1px;
+    margin-top: 0px;
     text-align: center;
     line-height: 200px;
     border:1px solid black;
-    width: 100%;
+    width: 550px;
     
 }
 .selected:active{
 background-color: indianred;
 }
     
+.tab-box li:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
 
 
 </style>
