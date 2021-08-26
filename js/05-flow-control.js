@@ -27,3 +27,34 @@ for(let i=0; i<5; i++){
 }
 console.log(star);
 
+// es6: for ... in
+// 객체의 속성(property)를 순회
+
+let obj = {
+    name: "강찬석",
+    age: 27,
+    job: "백수",
+    gender: "남성"
+
+}
+
+for (let key in obj){
+    console.log(key);
+
+}
+const arr = [5,1,4,3,2,9,8,0];
+for(let key in arr){
+    console.log(key);
+}
+// es6: for...of
+// 반복 가능 객체에서 요소를 하나씩
+for (let value of arr){
+    console.log(value);
+}
+// for...of는 순회 객체(배열 등) 에서만 사용
+
+// for(let value of obj){
+//     console.log(value);
+// }
+
+// 주의: for...in과 for...of를 구분해서 사용
