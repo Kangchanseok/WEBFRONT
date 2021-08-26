@@ -16,3 +16,18 @@ console.log(v2,typeof v2, v2== undefined); // undefined 체크
 // ===: 값과 타입 함께 비교
 console.log(2021 == "2021");
 console.log(2021 === "2021");
+
+// javasctipt는 number, string이 비어있으면 false, 데이터가 있으면 true 반환
+console.log("문자열: " , Boolean("String"), Boolean(""));
+console.log("수치형: " , Boolean(2021), Boolean(0));
+
+let content = "CONTENTS";
+
+console.log(true && content); // -> content 선택
+console.log(false && content); // -> false
+
+console.log(true || content); // -> true
+console.log(false || content); // -> content 선택
+
+
+
