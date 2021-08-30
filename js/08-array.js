@@ -120,3 +120,19 @@ else return -1;
 
 });
 console.log("Sort:(User Defined): " , fruits);
+
+// split: 특정 구분자를 기준으로 문자열 분리 -> array로 반환
+const str = "JavaScript is something strange than other languages";
+let chunks = str.split(" "); // 공백으로 분리
+console.log("Split: ",chunks);
+
+// loop 1:
+for (let i = 0; i < chunks.length; i++){
+    console.log("Word: " , chunks[i]);
+
+}
+// loop 2:
+for (let word of chunks){
+    console.log("for of: ", word);
+    
+}
