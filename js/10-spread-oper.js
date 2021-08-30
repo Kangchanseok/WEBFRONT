@@ -61,4 +61,10 @@ combined = {
     ...obj2, // obj2의 모든 속성을 전개
 }
 console.log("es6 combinde:",combined);
-// 
+// TODO: 전개 순서를 obj2, obj1 순서로 전개 해서 결과 비교
+
+// 객체의 전개
+ console.log("원본:", combined);
+ var{one,three,...others} = combined;
+ console.log(one,three, others);
+ // 1 3 {two:2,other:-1,four:4}
