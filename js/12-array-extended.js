@@ -46,4 +46,50 @@ function testEvery(){
 
 
 }
-testEvery();
+// testEvery();
+
+function testFilter(){
+    console.log("----filter");
+
+    let source = [1,2,3,4,5,6,7,8,9,10];
+    // source 에서 짝수요소만 피러링 해보자
+
+    // 기존방식
+    let result = [];
+    for (let i = 0; i< source.length; i++){
+        // 판별하기
+        if (source[i] % 2 == 0){
+            result.push(source[i]);
+        }
+    }
+    console.log("원본: " , source);
+    console.log("짝수 필터링: ", result);
+    
+    result = source.filter(item => item %2 == 0);
+    console.log("짝수 필터링(filter): ", result );
+    
+}
+// testFilter();
+
+function testMap(){
+    console.log("--------map");
+    let source = [1,2,3,4,5,6,7,8,9,10];
+    console.log("원본: ", source);
+
+    // 모든 요소를 *2 한 새 배열을 만들어라
+    let multiply = [];
+    for (let i =0; i< source.length; i++){
+        multiply.push(source[i] * 2);
+
+
+    }
+    console.log("요소 계산: ", multiply);
+
+
+
+// map 함수 활용
+multiply = source.map(item => item * 2);
+console.log("배열 곱셈(map): ", multiply);
+}
+
+testMap();
